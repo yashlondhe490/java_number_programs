@@ -20,7 +20,9 @@ class isXylemOrPhloemNumber
 	}
 
 	public static String isXylemOrPhloem(int num)
-	{								
+	{
+		if(num < 100)
+			return "Invalid no. please enter more then 3 digit-";
 		int last=num%10;  
 		num=num/10;			
 		int mid=0;			
